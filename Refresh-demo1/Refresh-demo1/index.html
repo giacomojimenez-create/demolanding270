@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refresh</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="Js/app.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="topheader">
+    <a href="#inicio" class="logo">
+      <img src="imagenes/logo1.jpeg" alt="Logo Refresh">
+    </a>
+    <ul class="Menu-Horizontal">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#solucion">Solución</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#modal-registro" class="boton-header">Comenzar</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="seccion-hero" id="inicio">
+    <div class="hero-contenedor">
+      <div class="hero-texto">
+        <h1>Nunca más botes comida por olvidar su fecha</h1>
+        <p>Gestiona tus alimentos de manera inteligente, recibe alertas antes de que caduquen y contribuye a reducir el desperdicio alimentario. Alineados con el ODS 12.</p>
+        <button class="btn-verde" onclick="document.getElementById('modal-registro').classList.add('activo')">
+          Registra tus alimentos
+        </button>
+        <p class="subtexto">Sin tarjeta de crédito • Gratis para siempre</p>
+      </div>
+      <div class="hero-imagen">
+        <img src="imagenes/principal (1).png" alt="Nevera organizada">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="seccion-problema" id="problema">
+    <div class="problema-contenedor">
+      <div class="problema-icono">
+        <img src="imagenes/advertencia.png" alt="Advertencia">
+      </div>
+      <h2>El desperdicio alimentario es un problema global</h2>
+      <div class="problema-card">
+        <img src="imagenes/grafic.jpeg" alt="estadistica">
+        <p class="stat-grande">1 de cada 3</p>
+        <p class="stat-sub">alimentos comprados en el hogar se desperdicia</p>
+      </div>
+      <p class="problema-texto">Esto no solo impacta tu economía familiar, sino también al medio ambiente. El desperdicio de alimentos genera emisiones de CO₂ equivalentes a 3.3 mil millones de toneladas anuales a nivel mundial.</p>
+    </div>
+  </section>
+
+  <!-- SOLUCIÓN -->
+  <section class="seccion-solucion" id="solucion">
+    <div class="solucion-contenedor">
+      <div class="solucion-header">
+        <h2>Cómo funciona Re-Fresh</h2>
+        <p>Una solución simple y efectiva para gestionar tus alimentos y reducir el desperdicio</p>
+      </div>
+      <div class="solucion-grid">
+        <div class="card-solucion">
+          <div class="card-icono verde">
+            <img src="imagenes/mini1.png" alt="Registra">
+          </div>
+          <h3>Registra</h3>
+          <p>Añade tus alimentos escaneando códigos de barras o manualmente. Registra fechas de caducidad en segundos.</p>
+        </div>
+        <div class="card-solucion">
+          <div class="card-icono azul">
+            <img src="imagenes/mini2.png" alt="Alerta">
+          </div>
+          <h3>Recibe alertas</h3>
+          <p>Te notificamos cuando tus alimentos estén próximos a caducar para que puedas consumirlos a tiempo.</p>
+        </div>
+        <div class="card-solucion">
+          <div class="card-icono verde">
+            <img src="imagenes/mini3.jpeg" alt="Aprovecha recetas">
+          </div>
+          <h3>Aprovecha con recetas</h3>
+          <p>Descubre recetas personalizadas basadas en los alimentos que tienes disponibles en tu hogar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="seccion-faq" id="faq">
+    <div class="faq-contenedor">
+      <div class="faq-header">
+        <h2>Preguntas Frecuentes</h2>
+        <p>Todo lo que necesitas saber sobre Re-Fresh</p>
+      </div>
+      <div class="accordion">
+        <details>
+          <summary>¿Re-Fresh es realmente gratuito?</summary>
+          <p>Sí, Re-Fresh es completamente gratuito para uso personal. No requieres tarjeta de crédito ni información de pago para comenzar.</p>
+        </details>
+        <details>
+          <summary>¿Cómo funciona el sistema de alertas?</summary>
+          <p>Cuando registras un alimento con su fecha de caducidad, Re-Fresh te enviará notificaciones días antes de que caduque. Puedes personalizar cuándo quieres recibir estas alertas.</p>
+        </details>
+        <details>
+          <summary>¿Necesito internet para usar Re-Fresh?</summary>
+          <p>Re-Fresh funciona tanto online como offline. Puedes registrar alimentos sin conexión y la información se sincronizará automáticamente cuando vuelvas a tener internet.</p>
+        </details>
+        <details>
+          <summary>¿Cómo contribuye Re-Fresh al ODS 12?</summary>
+          <p>El ODS 12 busca garantizar modalidades de consumo y producción sostenibles. Re-Fresh ayuda a reducir el desperdicio de alimentos a nivel doméstico.</p>
+        </details>
+        <details>
+          <summary>¿Puedo compartir mi inventario con mi familia?</summary>
+          <p>Sí, puedes crear un hogar compartido donde todos los miembros pueden ver y gestionar el inventario de alimentos.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="seccion-newsletter">
+    <div class="newsletter-contenedor">
+      <div class="newsletter-icono">
+        <img src="imagenes/gmail.png" alt="Correo">
+      </div>
+      <h2>Comienza a reducir el desperdicio hoy</h2>
+      <p>Únete a miles de hogares que ya están haciendo la diferencia</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('¡Gracias! Te hemos enviado un correo de confirmación');">
+        <input type="email" placeholder="tu@email.com" required>
+        <button type="submit">Comenzar gratis</button>
+      </form>
+      <p class="newsletter-sub">Sin compromiso • Cancela cuando quieras • 100% gratis</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>🌿 Re-Fresh</h3>
+        <p>Reduciendo el desperdicio alimentario, un hogar a la vez</p>
+      </div>
+      <div>
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="#">Características</a></li>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#">Móvil</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Re-Fresh. Todos los derechos reservados.</p>
+      <p>🌿 Alineado con ODS 12: Producción y Consumo Responsables</p>
+    </div>
+  </footer>
+
+  <!-- MODAL REGISTRO -->
+  <div class="modal-overlay" id="modal-registro">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-header-icon">🌿</div>
+          <div>
+            <h2>Registrar alimento</h2>
+            <p>Añade un nuevo producto a tu inventario</p>
+          </div>
+        </div>
+        <button class="close-btn" onclick="cerrarModal()">✕</button>
+      </div>
+
+      <div id="form-body">
+        <div class="modal-body">
+          <button class="btn-scan" onclick="simulateScan()" type="button">
+            📷 Escanear código de barras
+          </button>
+          <div class="divider"><hr><span>o ingresa manualmente</span><hr></div>
+
+          <div class="form-row">
+            <div class="form-group full">
+              <label for="food-name">Nombre del alimento</label>
+              <input type="text" id="food-name" placeholder="Ej: Leche entera, Yogur natural…">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="food-qty">Cantidad</label>
+              <input type="number" id="food-qty" min="0.1" step="0.1" value="1">
+            </div>
+            <div class="form-group">
+              <label for="food-unit">Unidad</label>
+              <select id="food-unit">
+                <option value="unidad">Unidad(es)</option>
+                <option value="kg">kg</option>
+                <option value="g">gramos</option>
+                <option value="L">litros</option>
+                <option value="ml">ml</option>
+                <option value="paquete">Paquete</option>
+                <option value="bandeja">Bandeja</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="food-purchase">Fecha de compra</label>
+              <input type="date" id="food-purchase">
+            </div>
+            <div class="form-group">
+              <label for="food-expiry">Fecha de caducidad</label>
+              <input type="date" id="food-expiry">
+              <span class="date-warning" id="date-warning">⚠️ Fecha muy próxima</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Categoría</label>
+            <div class="category-pills">
+              <button class="pill active" onclick="selectPill(this)" type="button">🥛 Lácteos</button>
+              <button class="pill" onclick="selectPill(this)" type="button">🥩 Carnes</button>
+              <button class="pill" onclick="selectPill(this)" type="button">🍎 Frutas</button>
+              <button class="pill" onclick="selectPill(this)" type="button">🥦 Verduras</button>
+              <button class="pill" onclick="selectPill(this)" type="button">🍞 Panadería</button>
+              <button class="pill" onclick="selectPill(this)" type="button">📦 Otro</button>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top:14px">
+            <label for="food-notes">Notas (opcional)</label>
+            <textarea id="food-notes" placeholder="Ej: Abierto, guardar en nevera…"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn-cancelar" onclick="cerrarModal()">Cancelar</button>
+          <button class="btn-guardar" onclick="guardarAlimento()">✓ Guardar alimento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
